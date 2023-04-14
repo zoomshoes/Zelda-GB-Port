@@ -1,5 +1,6 @@
-# Zelda-Clone
+# Zelda NES-GB Conversion Project
 The NES version of The Legend of Zelda, Game Boy-ified!
+Made using GB Studio 3.1.0.
 
 I'm trying to be as faithful to the original NES title as I can, within the constraints of the Game Boy.
 
