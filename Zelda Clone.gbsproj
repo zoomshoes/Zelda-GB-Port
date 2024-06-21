@@ -8866,7 +8866,8 @@
                             "select"
                         ],
                         "override": true,
-                        "__scriptTabs": "press"
+                        "__scriptTabs": "press",
+                        "__comment": true
                     },
                     "children": {
                         "true": [
@@ -8898,7 +8899,7 @@
                         "comparator": 0,
                         "__collapseElse": false,
                         "__disableElse": true,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -8920,7 +8921,8 @@
                             {
                                 "command": "EVENT_CALL_CUSTOM_EVENT",
                                 "args": {
-                                    "customEventId": "ca9d698e-2705-4576-8063-6639d7585867"
+                                    "customEventId": "ca9d698e-2705-4576-8063-6639d7585867",
+                                    "__comment": true
                                 },
                                 "id": "a353979f-8331-42bb-a9fe-e0a6721c3e58"
                             }
@@ -8953,7 +8955,7 @@
                         "comparator": "0",
                         "__collapseElse": false,
                         "__disableElse": true,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -9033,7 +9035,7 @@
                                             "command": "EVENT_CALL_CUSTOM_EVENT",
                                             "args": {
                                                 "customEventId": "ca9d698e-2705-4576-8063-6639d7585867",
-                                                "__comment": false,
+                                                "__comment": true,
                                                 "__collapse": true
                                             },
                                             "id": "8250c9b0-b469-4672-bb55-306999e9cdd2"
@@ -9062,7 +9064,7 @@
                         "operator": ">",
                         "comparator": 0,
                         "__collapseElse": true,
-                        "__collapse": false,
+                        "__collapse": true,
                         "__disableElse": true
                     },
                     "children": {
@@ -37232,10 +37234,10 @@
                 {
                     "command": "PT_EVENT_ADVANCED_DIALOGUE",
                     "args": {
-                        "__scriptTabs": "text",
+                        "__scriptTabs": "layout",
                         "minHeight": 2,
                         "maxHeight": 2,
-                        "position": "top",
+                        "position": "bottom",
                         "showBorder": false,
                         "clearPrevious": true,
                         "textX": 0,
@@ -37745,7 +37747,8 @@
                                 "command": "EVENT_CALL_CUSTOM_EVENT",
                                 "args": {
                                     "customEventId": "ca9d698e-2705-4576-8063-6639d7585867",
-                                    "__collapse": false
+                                    "__collapse": false,
+                                    "__comment": false
                                 },
                                 "id": "8347003a-da55-437d-8b4e-871d8c9e8337"
                             }
@@ -38039,6 +38042,30 @@
             "width": 128,
             "height": 112,
             "filename": "gbs-var.png"
+        },
+        {
+            "id": "29e4b131-632f-4ca8-83b9-34c058b403a4",
+            "name": "neu-zelda-light",
+            "symbol": "font_neu_zelda_light",
+            "width": 128,
+            "height": 112,
+            "filename": "neu-zelda-light.png"
+        },
+        {
+            "id": "6a18b0a0-bcce-4cab-b413-b49a02b7fbdc",
+            "name": "neu-zelda",
+            "symbol": "font_neu_zelda",
+            "width": 128,
+            "height": 112,
+            "filename": "neu-zelda.png"
+        },
+        {
+            "id": "7a8a04e9-40e9-4ba7-ba7c-dec856c2be5f",
+            "name": "thin-var",
+            "symbol": "font_thin_var",
+            "width": 128,
+            "height": 112,
+            "filename": "thin-var.png"
         }
     ],
     "avatars": [],
@@ -38246,17 +38273,17 @@
         }
     ],
     "settings": {
-        "startSceneId": "2a94c418-d0c9-481b-8b73-524a348ee0a4",
-        "startX": 29,
-        "startY": 83,
+        "startSceneId": "b878a926-c7ef-413c-929c-b725e6cb906d",
+        "startX": 0,
+        "startY": 17,
         "startMoveSpeed": 1.2,
         "startAnimSpeed": 7,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1916,
-        "worldScrollY": 3367,
-        "zoom": 200,
+        "worldScrollX": 969.5999755859375,
+        "worldScrollY": 2553.60009765625,
+        "zoom": 162.5,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
@@ -38284,12 +38311,12 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            204,
-            316,
-            445
+            215,
+            334,
+            471
         ],
         "showNavigator": true,
-        "defaultFontId": "7d18ec86-d1b4-4bce-bb30-88148a16ff70",
+        "defaultFontId": "29e4b131-632f-4ca8-83b9-34c058b403a4",
         "defaultCharacterEncoding": "",
         "defaultPlayerSprites": {
             "TOPDOWN": "045b2add-6cad-4464-b8ae-c06b317288f3",

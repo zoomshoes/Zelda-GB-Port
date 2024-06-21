@@ -8860,6 +8860,28 @@
             ],
             "script": [
                 {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "select"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "0aa7ce94-cc83-4ff3-8a69-0405eb148216"
+                                },
+                                "id": "32217447-f2cf-46ed-b9b8-423c553d627a"
+                            }
+                        ]
+                    },
+                    "id": "ad90b148-2080-448a-98bb-9af2814d6693"
+                },
+                {
                     "command": "EVENT_SET_TRUE",
                     "args": {
                         "variable": "3",
@@ -8876,7 +8898,7 @@
                         "comparator": 0,
                         "__collapseElse": false,
                         "__disableElse": true,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -8898,7 +8920,8 @@
                             {
                                 "command": "EVENT_CALL_CUSTOM_EVENT",
                                 "args": {
-                                    "customEventId": "ca9d698e-2705-4576-8063-6639d7585867"
+                                    "customEventId": "ca9d698e-2705-4576-8063-6639d7585867",
+                                    "__comment": true
                                 },
                                 "id": "a353979f-8331-42bb-a9fe-e0a6721c3e58"
                             }
@@ -8931,7 +8954,7 @@
                         "comparator": "0",
                         "__collapseElse": false,
                         "__disableElse": true,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -9011,7 +9034,7 @@
                                             "command": "EVENT_CALL_CUSTOM_EVENT",
                                             "args": {
                                                 "customEventId": "ca9d698e-2705-4576-8063-6639d7585867",
-                                                "__comment": false,
+                                                "__comment": true,
                                                 "__collapse": true
                                             },
                                             "id": "8250c9b0-b469-4672-bb55-306999e9cdd2"
@@ -9040,7 +9063,7 @@
                         "operator": ">",
                         "comparator": 0,
                         "__collapseElse": true,
-                        "__collapse": false,
+                        "__collapse": true,
                         "__disableElse": true
                     },
                     "children": {
@@ -37210,10 +37233,10 @@
                 {
                     "command": "PT_EVENT_ADVANCED_DIALOGUE",
                     "args": {
-                        "__scriptTabs": "text",
+                        "__scriptTabs": "layout",
                         "minHeight": 2,
                         "maxHeight": 2,
-                        "position": "top",
+                        "position": "bottom",
                         "showBorder": false,
                         "clearPrevious": true,
                         "textX": 0,
@@ -37723,7 +37746,8 @@
                                 "command": "EVENT_CALL_CUSTOM_EVENT",
                                 "args": {
                                     "customEventId": "ca9d698e-2705-4576-8063-6639d7585867",
-                                    "__collapse": false
+                                    "__collapse": false,
+                                    "__comment": false
                                 },
                                 "id": "8347003a-da55-437d-8b4e-871d8c9e8337"
                             }
@@ -37798,6 +37822,146 @@
                         ]
                     },
                     "id": "eb82206f-e9d4-4484-97f2-088cc3b88617"
+                }
+            ]
+        },
+        {
+            "id": "0aa7ce94-cc83-4ff3-8a69-0405eb148216",
+            "name": "pause_menu",
+            "description": "",
+            "variables": {
+                "V0": {
+                    "id": "V0",
+                    "name": "Variable A",
+                    "passByReference": true
+                }
+            },
+            "actors": {},
+            "symbol": "script_11",
+            "script": [
+                {
+                    "command": "PT_EVENT_ADVANCED_MENU",
+                    "args": {
+                        "variable": "V0",
+                        "__scriptTabs": "items",
+                        "width": 20,
+                        "height": 5,
+                        "from": "bottom",
+                        "items": 7,
+                        "option_1_text": "Wooden Sword",
+                        "option1_x": 0,
+                        "option1_y": 0,
+                        "option1_l": 0,
+                        "option1_r": 2,
+                        "option1_u": 0,
+                        "option1_d": 0,
+                        "option_2_text": "Shield",
+                        "option2_x": 1,
+                        "option2_y": 0,
+                        "option2_l": 0,
+                        "option2_r": 0,
+                        "option2_u": 0,
+                        "option2_d": 0,
+                        "option_3_text": "",
+                        "option3_x": 0,
+                        "option3_y": 0,
+                        "option3_l": 0,
+                        "option3_r": 0,
+                        "option3_u": 0,
+                        "option3_d": 0,
+                        "option_4_text": "",
+                        "option4_x": 0,
+                        "option4_y": 0,
+                        "option4_l": 0,
+                        "option4_r": 0,
+                        "option4_u": 0,
+                        "option4_d": 0,
+                        "option_5_text": "",
+                        "option5_x": 0,
+                        "option5_y": 0,
+                        "option5_l": 0,
+                        "option5_r": 0,
+                        "option5_u": 0,
+                        "option5_d": 0,
+                        "option_6_text": "",
+                        "option6_x": 0,
+                        "option6_y": 0,
+                        "option6_l": 0,
+                        "option6_r": 0,
+                        "option6_u": 0,
+                        "option6_d": 0,
+                        "option_7_text": "",
+                        "option7_x": 0,
+                        "option7_y": 0,
+                        "option7_l": 0,
+                        "option7_r": 0,
+                        "option7_u": 0,
+                        "option7_d": 0,
+                        "option_8_text": "",
+                        "option8_x": 0,
+                        "option8_y": 0,
+                        "option8_l": 0,
+                        "option8_r": 0,
+                        "option8_u": 0,
+                        "option8_d": 0,
+                        "option_9_text": "",
+                        "option9_x": 0,
+                        "option9_y": 0,
+                        "option9_l": 0,
+                        "option9_r": 0,
+                        "option9_u": 0,
+                        "option9_d": 0,
+                        "option_10_text": "",
+                        "option10_x": 0,
+                        "option10_y": 0,
+                        "option10_l": 0,
+                        "option10_r": 0,
+                        "option10_u": 0,
+                        "option10_d": 0,
+                        "option_11_text": "",
+                        "option11_x": 0,
+                        "option11_y": 0,
+                        "option11_l": 0,
+                        "option11_r": 0,
+                        "option11_u": 0,
+                        "option11_d": 0,
+                        "option_12_text": "",
+                        "option12_x": 0,
+                        "option12_y": 0,
+                        "option12_l": 0,
+                        "option12_r": 0,
+                        "option12_u": 0,
+                        "option12_d": 0,
+                        "option_13_text": "",
+                        "option13_x": 0,
+                        "option13_y": 0,
+                        "option13_l": 0,
+                        "option13_r": 0,
+                        "option13_u": 0,
+                        "option13_d": 0,
+                        "option_14_text": "",
+                        "option14_x": 0,
+                        "option14_y": 0,
+                        "option14_l": 0,
+                        "option14_r": 0,
+                        "option14_u": 0,
+                        "option14_d": 0,
+                        "option_15_text": "",
+                        "option15_x": 0,
+                        "option15_y": 0,
+                        "option15_l": 0,
+                        "option15_r": 0,
+                        "option15_u": 0,
+                        "option15_d": 0,
+                        "option_16_text": "",
+                        "option16_x": 0,
+                        "option16_y": 0,
+                        "option16_l": 0,
+                        "option16_r": 0,
+                        "option16_u": 0,
+                        "option16_d": 0
+                    },
+                    "id": "82eb4180-3e43-4b1f-89e9-af436212b8d4"
                 }
             ]
         }
@@ -37877,6 +38041,22 @@
             "width": 128,
             "height": 112,
             "filename": "gbs-var.png"
+        },
+        {
+            "id": "29e4b131-632f-4ca8-83b9-34c058b403a4",
+            "name": "neu-zelda-light",
+            "symbol": "font_neu_zelda_light",
+            "width": 128,
+            "height": 112,
+            "filename": "neu-zelda-light.png"
+        },
+        {
+            "id": "6a18b0a0-bcce-4cab-b413-b49a02b7fbdc",
+            "name": "neu-zelda",
+            "symbol": "font_neu_zelda",
+            "width": 128,
+            "height": 112,
+            "filename": "neu-zelda.png"
         }
     ],
     "avatars": [],
@@ -38092,9 +38272,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1898,
-        "worldScrollY": 3371,
-        "zoom": 200,
+        "worldScrollX": 754,
+        "worldScrollY": 1339,
+        "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
@@ -38122,12 +38302,12 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            204,
-            316,
-            445
+            200,
+            310,
+            437
         ],
         "showNavigator": true,
-        "defaultFontId": "7d18ec86-d1b4-4bce-bb30-88148a16ff70",
+        "defaultFontId": "29e4b131-632f-4ca8-83b9-34c058b403a4",
         "defaultCharacterEncoding": "",
         "defaultPlayerSprites": {
             "TOPDOWN": "045b2add-6cad-4464-b8ae-c06b317288f3",
